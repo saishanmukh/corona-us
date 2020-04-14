@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>COVID19</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/all.min.css" rel="stylesheet" type="text/css">
+  <link
+    href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet">
+  <link href="css/sb-admin-2.min.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+
+
+</head>
+
+<body id="page-top" class="sidebar-toggled">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper" class="toggled">
+
+    <!-- Sidebar -->
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion toggled" id="accordionSidebar">
+
+      <!-- Sidebar - Brand -->
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        <div class="sidebar-brand-icon rotate-n-15">
+          <img class="mr-3" src="img/viruses-solid.svg" alt="" height="50px" width="50px">
+        </div>
+        <div class="sidebar-brand-text mx-3">COVID19</div>
+      </a>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider my-0">
+
+      <!-- Nav Item - Dashboard -->
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">
+          <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
+          <span>Dashboard</span></a>
+      </li>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider">
+
+      <!-- Nav Item - Charts -->
+      <!-- <li class="nav-item">
+        <a class="nav-link" href="404.html">
+          <i class="fas fa-fw fa-chart-area"></i>
+          <span>Charts</span></a>
+      </li> -->
+
+      <!-- Nav Item - Tables -->
+      <li class="nav-item">
+        <a class="nav-link" href="tables.html">
+          <i class="fas fa-fw fa-table"></i>
+          <span>Tables</span></a>
+      </li>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider d-none d-md-block">
+
+      <!-- Sidebar Toggler (Sidebar) -->
+      <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+      </div>
+
+    </ul>
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+
+        <!-- Topbar -->
+        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+          <!-- Sidebar Toggle (Topbar) -->
+          <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+            <i class="fa fa-bars"></i>
+          </button>
+
+        </nav>
+        <!-- End of Topbar -->
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+          <!-- Page Heading -->
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">COVID19</h1>
+          </div>
+
+          <!-- Content Row -->
+          <div class="row">
+            <!-- Pending Requests Card Example -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-warning shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Texas infected</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800" id="Texas"></div>
+                    </div>
+                    <div class="col-auto">
+                      <img class="mr-3" src="img/viruses-solid.svg" alt="" height="50px" width="50px">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-primary shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-uppercase mb-1" style="color: #e74a3b;">Texas Died</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800" id='TexasDied'></div>
+                    </div>
+                    <div class="col-auto">
+                      <!-- <i class="fas fa-calendar fa-2x darkred"></i> -->
+                      <img class="mr-3" src="img/tombstone.png" alt="" height="50px" width="50px">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-warning shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Infected</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800" id="Infected"></div>
+                    </div>
+                    <div class="col-auto">
+                      <img class="mr-3" src="img/viruses-solid.svg" alt="" height="50px" width="50px">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Earnings (Monthly) Card Example -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-primary shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-uppercase mb-1" style="color: #e74a3b;">Died</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800" id='Died'></div>
+                    </div>
+                    <div class="col-auto">
+                      <!-- <i class="fas fa-calendar fa-2x darkred"></i> -->
+                      <img class="mr-3" src="img/tombstone.png" alt="" height="50px" width="50px">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Earnings (Monthly) Card Example -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-info shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Cured</div>
+                      <div class="row no-gutters align-items-center">
+                        <div class="col-auto">
+                          <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800" id="Cured"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                      <img class="mr-3" src="img/virus-slash-solid.svg" alt="" height="50px" width="50px">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Content Row -->
+          <div class="row">
+
+            <!-- Area Chart -->
+            <div class="col-xl-8 col-lg-7 col-lg-6 mb-4 ">
+
+              <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <h6 class="m-0 font-weight-bold text-primary">State-Wise Overview</h6>
+                </div>
+                <!-- Card Body -->
+                <div class="card-body">
+                  <div class="chart-area" id="visualization1" style="width: 100%;height: 100%;">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pie Chart -->
+            <div class="col-xl-4 col-lg-5">
+              <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <h6 class="m-0 font-weight-bold text-primary">Total Cases in Us</h6>
+                </div>
+                <!-- Card Body -->
+                <div class="card-body">
+                  <div class="chart-pie pt-4 pb-2">
+                    <canvas id="myPieChart"></canvas>
+                  </div>
+                  <div class="mt-4 text-center small">
+                    <span class="mr-2">
+                      <!-- <i class="fa fa-adjust" style="color: #FA001D"></i> -->
+                      <i class="fas fa-circle" style="color: #f6c23e;"></i>
+                      Infected
+                    </span>
+                    <span class="mr-2">
+                      <i class="fas fa-circle " style="color: #e74a3b;"></i> Died
+                    </span>
+                    <span class="mr-2">
+                      <i class="fas fa-circle " style="color: #36b9cc;"></i> Cured
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Content Column -->
+        </div>
+
+      </div>
+      <!-- /.container-fluid -->
+
+    </div>
+    <!-- End of Main Content -->
+
+
+  </div>
+  <!-- End of Content Wrapper -->
+
+  <!-- </div> -->
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery.min.js"></script>
+  <script src="vendor/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin-2.min.js"></script>
+
+  <!-- Page level plugins -->
+  <script src="vendor/Chart.min.js"></script>
+
+  <!-- Page level custom scripts -->
+  <script src="js/demo/chart-area-demo.js"></script>
+  <script src="js/demo/chart-pie-demo.js"></script>
+  <script src="https://www.gstatic.com/charts/loader.js"></script>
+  <script>
+    language = "text/javascript"
+    google.charts.load("current", {
+      packages: ["corechart", 'controls']
+    })
+
+    $(document).ready(function () {
+
+
+      $.ajax({
+          url: "https://covid19-server.chrismichael.now.sh/api/v1/CasesInAllUSStates",
+          method: "GET"
+        }).done(function (response) {
+          google.charts.setOnLoadCallback(function () {
+            generateus(response);
+            var values = response.data[0].table;
+            var cured =change(values[0].TotalCases)-change(values[0].TotalDeaths)-change(values[0].ActiveCases);
+        document.getElementById('Cured').innerHTML = cured;
+        document.getElementById('Died').innerHTML = values[0].TotalDeaths;
+        document.getElementById('Infected').innerHTML = values[0].ActiveCases;
+        document.getElementById('Texas').innerHTML = values[10].ActiveCases;
+        document.getElementById('TexasDied').innerHTML = values[10].TotalDeaths;
+
+
+        drawpie(change(values[0].TotalDeaths),change(values[0].ActiveCases),cured);
+
+          });
+          $(window).resize(function () {
+            generateus(response);
+          });
+        }).fail(function (err) {
+          console.log(err);
+        });
+
+    });
+
+    function generateus(new_data) {
+      var values = new_data.data[0].table;
+      var data = google.visualization.arrayToDataTable([]);
+      var options = {
+        region: 'US',
+        displayMode: 'markers',
+        backgroundColor: 'black',
+        colorAxis: { colors: ['#ff3333'	,'#ffb3b3','#ff8080','#ff4d4d','#ff1a1a','#e60000', '#cc0000', '#990000'] },
+        tooltip: {
+            isHtml: true
+        }
+      };
+      data.addColumn('string', 'Label');
+      data.addColumn('number', 'noof_cases');
+      data.addColumn({
+        type: 'string',
+        role: 'tooltip',
+        p: {
+          html: true
+        }
+      });
+      d = {}
+      for (i = 0; i < values.length; i++) {
+        if (values[i].USAState != 'USA Total')
+          d[i] = {
+            "district": values[i].USAState,
+            "no_of_cases": change(values[i].TotalCases),
+            "tooltip": 'ActiveCases:' + values[i].ActiveCases+' '+ 'TotalCases'+values[i].TotalCases
+          }
+        
+      }
+      var ab = [],
+        cd = [],
+        fg = [];
+        var fin = [];
+
+      for (i in d) {
+        fin.push([d[i].district, d[i].no_of_cases, d[i].tooltip])
+      }
+      var opts = {
+        title: "Corona cases",
+        titleStyle: {
+          fontSize: 20,
+          position: "right"
+        },
+        region: 'US',
+        backgroundColor: "#4e73df",
+        displayMode: 'regions',
+        resolution: 'provinces',
+        dataMode: 'markers',
+        datalessRegionColor: 'ash',
+        colorAxis: {
+          colors: ['#ffb3b3','#ff8080','#ff4d4d','#ff1a1a','#e60000', '#cc0000', '#990000'],
+        },
+        // width: 500,
+        // height: 500,
+        strokeColor: '#a8a0a0',
+        strokeWeight: 2,
+        scale: 1,
+      };
+      data.addRows(fin);
+      var geochart = new google.visualization.GeoChart(document.getElementById('visualization1'));
+      geochart.draw(data, opts);
+    }
+    function change(rep) {
+        var str = parseInt(rep.replace(",", ""));
+        return str;
+      }
+
+    function  change(rep) {
+        var str = parseInt(rep.replace(",", ""));
+        return str;
+      }
+  </script>
+</body>
+
+</html>
